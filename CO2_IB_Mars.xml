@@ -1,0 +1,38 @@
+<!--
+ CO2_5 reaction mechanism
+Reaction Rates are taken from:
+    1) Ibrahim S ,aerothermodynamics over large angle blunt cone
+       IISC 2014 (Chemkin prediction), PhD Thesis
+-->
+<mechanism name="CO2_IB_Mars">
+
+    <arrhenius_units A="mol,cm,s,K" E="kcal,mol,K" />
+
+    <!-- Reaction set, IISC, 2014 -->
+    <reaction formula="CO2=CO+O">
+        <arrhenius A="1.29E+14" n="0.5" T="103923.0" />
+    </reaction>
+
+    <!-- Reaction set, IISC, 2014 -->
+    <reaction formula="CO=C+O">
+        <arrhenius A="9.18E+19" n="-3.1" T="256343.0" />
+    </reaction>
+
+    <!-- Reaction set, IISC, 2014 -->
+    <reaction formula="CO2+O=CO+O2">
+        <arrhenius A="2.71E+14" n="0.0" T="67132.0" />
+    </reaction>
+
+    <!-- Reaction set, IISC, 2014 -->
+    <reaction formula="O2=O+O">
+        <arrhenius A="1.14E+16" n="-1.0" T="118018.0" />
+    </reaction>
+
+    <!-- Reaction set, IISC, 2014 -->
+    <reaction formula="C+O2=CO+O">
+        <arrhenius A="1.2E+14" n="0.0" T="3994.0" />
+    </reaction>
+
+</mechanism>
+
+
