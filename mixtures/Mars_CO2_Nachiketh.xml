@@ -1,0 +1,16 @@
+<!-- 5-species CO2 mixture type="mole" C:0.2727, O:0.7271 state_model="ChemNonEqTTv" -->
+<mixture mechanism="CO2_IB_Mars" state_model="ChemNonEq1T" thermo_db="RRHO">
+
+    <species>
+         C O CO CO2 O2
+    </species>
+
+	<element_compositions default="default">
+		<composition name="default">
+			C:4e-13, O:0.0012 CO:0.071 CO2:0.889 O2:0.035
+		</composition>
+		
+	</element_compositions>
+
+
+</mixture>
